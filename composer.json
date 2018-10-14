@@ -1,12 +1,21 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "bislewl/nhtsa_api",
+  "description": "A PHP Class to connect with the NHTSA ",
   "minimum-stability": "stable",
+  "type" : "library",
   "license": "mit",
   "authors": [
     {
       "name": "Larry Bislew",
       "email": "larry@bislew.com"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-0": {
+      "NHTSA\\": "src/"
+    },
+    "psr-4": {
+      "NHTSA\\": "src"
+    }
+  }
 }
